@@ -1,0 +1,19 @@
+{
+  "name": "ist-dehuk-server",
+  "version": "1.0.1",
+  "description": "Created web application for Istanbul University DEHUK. ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Furkan Boran",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
