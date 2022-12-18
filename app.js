@@ -13,7 +13,7 @@ app.use(express.static("public"));
 app.set('trust proxy', 1)
 app.use(rateLimiter({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 300 // limit each IP to 300 requests per windowMs
+  max: 50 // limit each IP to 300 requests per windowMs
 }))
 app.use(helmet())
 app.use(cors())
@@ -26,6 +26,6 @@ app.get("/", function(req, res) {
   });
 });
 
-app.listen(3001, function() {
+app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
